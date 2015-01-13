@@ -26,6 +26,8 @@ def nameOfMissingTag(path_to_html_file):
                     bracket_dict[tag] -= 1
                 else:
                     bracket_dict[tag] = -1
+    # Free up resources from open file
+    file.close()
 
     print bracket_dict
 
